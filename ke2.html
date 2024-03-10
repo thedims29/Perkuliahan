@@ -3,40 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Buku</title>
+    <title>Tabel 4x4</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            width: auto;
+            height: auto;
+            border: 1px solid #000;
+            text-align: left;
+        }
+
+    </style>
 </head>
 <body>
-    <h1>WEB Daftar Buku</h1>
-    <h2>judul: Web Programming - PROGRAMMING</h2>
-    <h3>harga : Rp. 245.000,00</h3>
-    <h3>pengarang : John Dean</h3>
+    <table border="1">
+        <tr>
+            
+            <th colspan="4" bgcolor="orange">Buku</th>
+        </tr>
 
-    <form>
-        <label for="name">Nama:</label><br>
-        <input type="text" id="name" name="name"><br>
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password"><br>
+        <tr>
+            <th rowspan="4"><img src="aset/207182.png" width="150" height="200" alt=""></th>
+        </tr>
 
-        <label for="gender">Jenis Kelamin:</label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Laki Laki</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Perempuan</label><br>
-
-        <label for="hobbies">Hobi:</label><br>
-        <select id="hobbies" name="hobbies" multiple>
-            <option value="reading">Membaca Buku</option>
-            <option value="writing">Menulis</option>
-            <option value="fishing">Memancing</option>
-        </select><br>
-
-        <label for="city">Asal Kota:</label><br>
-        <input type="text" id="city" name="city"><br>
-
-        <label for="comments">Komentar Anda:</label><br>
-        <textarea id="comments" name="comments"></textarea><br>
-
-        <input type="submit" value="Mulai Proses!">
-    </form>
+        <tr>
+            <td>Judul</td>
+            <td>:</td>
+            <td>Pemrograman Web</td>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>:</td>
+            <td>Rp.245.000,00</td>
+        </tr>
+        <tr>
+            <td>Pengarang</td>
+            <td>:</td>
+            <td>Jhon Dean</td>
+        </tr>
+    </table>
 </body>
 </html>
